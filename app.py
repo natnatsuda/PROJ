@@ -1,8 +1,8 @@
 from flask import Flask, render_template, request,redirect,url_for
 import test
-import test_inverted
-import test_hash
-import test_tree
+import testinverted
+import testhash
+import testtree
 import tfidf
 import searchengine
 import positional
