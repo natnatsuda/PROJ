@@ -114,13 +114,12 @@ def wildcard():
   if request.method == "POST":
     result = request.args
     wilds = request.form['text']
-    print(f"wilds = {wilds}")
+   
     t = clearfileandtoken(words)
     for i in t:
       if i.count('*') != 0:
         wil = words.replace(i,wilds)
     pos,c = positional.searchword(wil)
-    print(pos)
     repo,ttpo = tfpos.searchword(wil,pos)
     sim,tt = tfidf.searchword(wil)
 
