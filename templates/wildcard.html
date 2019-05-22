@@ -11,6 +11,10 @@
     <link href="{{ url_for('static', filename='tablee.css') }}" type="text/css" rel="stylesheet" />
     <link href="{{ url_for('static', filename='search4.css') }}" type="text/css" rel="stylesheet" />
     <link href="{{ url_for('static', filename='wild14.css') }}" type="text/css" rel="stylesheet" />
+    <link href="rank5.css" type="text/css" rel="stylesheet" />
+    <link href="tablee.css" type="text/css" rel="stylesheet" />
+    <link href="search4.css" type="text/css" rel="stylesheet" />
+    <link href="wild14.css" type="text/css" rel="stylesheet" />
     
    
 </head>
@@ -19,10 +23,10 @@
 
 
   <div class="flexsearch" style="height: 130;"> 
-    <a href="http://127.0.0.1:5000/"><img src= "https://sv1.picz.in.th/images/2019/03/24/tblDzq.png" width="200" hight="150" /></a>
+    <a href="http://35.240.131.7/PROJ/templates/"><img src= "https://sv1.picz.in.th/images/2019/03/24/tblDzq.png" width="200" hight="150" /></a>
 
   <div class="flexsearch--wrapper">
-    <form class="flexsearch--form" action="http://127.0.0.1:5000/wildcard" method="POST">
+    <form class="flexsearch--form" action="http://35.240.131.7/PROJ/templates/wildcard" method="POST">
       <div class="flexsearch--input-wrapper">
         <input class="flexsearch--input" type="text" name="text" value="{{text}}" style="width: 490;
         border-color: darkslateblue;"/>
@@ -32,7 +36,7 @@
   </div>
 </form>
 </div>
-<form action="http://127.0.0.1:5000/wildcard" method="POST">
+<form action="http://35.240.131.7/PROJ/templates/wildcard" method="POST">
   <select class="chosen-value" name="text" style="position: sticky;">
     <option >{{text}} </option>
   {% for i in re5: %}
@@ -41,7 +45,7 @@
 
 </select>
 
-<input class="sear" type="button" value="SEARCH" onClick="this.form.action='http://127.0.0.1:5000/wildcard'; submit()" formmethod="POST" style="top: 129;
+<input class="sear" type="button" value="SEARCH" onClick="this.form.action='http://35.240.131.7/PROJ/templates/wildcard'; submit()" formmethod="POST" style="top: 129;
 left: 820;
 height: 55;">
 
@@ -53,8 +57,8 @@ width: 3000px;
 top: 50px
 ;
 color: white;">CHOOSE TO SHOW RANK OF</h4>
-  <input class="se" type="button" value="inverted" onClick="this.form.action='http://127.0.0.1:5000/rankinverted'; submit()" formmethod="post">
-  <input class="sea" type="button" value="Positional" onClick="this.form.action='http://127.0.0.1:5000/rankPositional'; submit()" formmethod="post">
+  <input class="se" type="button" value="inverted" onClick="this.form.action='http://35.240.131.7/PROJ/templates/rankinverted'; submit()" formmethod="post">
+  <input class="sea" type="button" value="Positional" onClick="this.form.action='http://35.240.131.7/PROJ/templates/rankPositional'; submit()" formmethod="post">
 
 
   </section>
