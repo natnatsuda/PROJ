@@ -43,6 +43,7 @@ def result():
   if request.method == "POST":
     result = request.args
     words = request.form['text']
+    print(words)
     if len(words) != 0:  
       if words.count('*') != 0:
         w = searchengine.listword(words)
