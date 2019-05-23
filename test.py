@@ -37,7 +37,6 @@ def search(search,dicts):
       k += 1
     else:
       c = 0
-      print(f"{i} is not found")
   return k,c
 
 
