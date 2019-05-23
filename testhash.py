@@ -65,10 +65,6 @@ class HashMap:
 				return True
 		return False
 			
-	def print(self):
-		for item in self.map:
-			if item is not None:
-				print(str(item))
 			
 
 
@@ -91,7 +87,7 @@ def search(search,mydict):
 		h.add(i,mydict[i])
 
 	for i in search: 
-		print(i)
+
 		ha,c = h.get(i,c)
 		if ha != None:
 			for k,v in ha.items():
@@ -106,6 +102,5 @@ def search(search,mydict):
 
 def searchword(text):
 	t = clearfileandtoken(text)
-	print(t)
 	p,c = search(t,mydict)
 	return p,c

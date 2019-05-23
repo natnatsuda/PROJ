@@ -54,7 +54,7 @@ def search(mydict,words):
         l1.append("Not found!!!")
     else:
         for j in l:
-            print(j)
+    
             for k in j[1]:
                 l1.append(df['url'][int(k)-1])
     return l1,c

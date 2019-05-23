@@ -97,7 +97,6 @@ def searchword(text,pos):
             sortsim = sorted(s.items(), key=lambda kv: kv[1],reverse = True)
             for i in sortsim:
                 for j in pos.keys():
-                    #print(j)
                     if i[1] > 0 and i[0] == int(j) :
                         ret[df['url'][i[0]-1]] = i[1]
         else:
