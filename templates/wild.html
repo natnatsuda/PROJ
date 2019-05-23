@@ -22,8 +22,8 @@
 
 
   <div class="flexsearch" style="width:1720px;"> 
-      <form action="http://35.240.131.7/PROJ/templates/wild.html" method="POST">
-      <a href="http://35.240.131.7/PROJ/templates"><img src= "https://sv1.picz.in.th/images/2019/03/24/tblDzq.png" width="200" hight="150" /></a>
+      <form action="http://35.240.131.7:5000/wild" method="POST">
+      <a href="http://35.240.131.7:5000/"><img src= "https://sv1.picz.in.th/images/2019/03/24/tblDzq.png" width="200" hight="150" /></a>
 
       <div class="flexsearch--wrapper" style="display: -webkit-inline-box;">
         
@@ -37,7 +37,7 @@
       </form>
       </div>   
           
-      <form action="http://35.240.131.7/PROJ/templates/wildcard.html" method="POST">
+      <form action="http://35.240.131.7:5000/wildcard" method="POST">
         <select class="chosen-value" name="text" style="position: relative;">
           <option >{{text}} </option>
         {% for i in result1: %}
@@ -46,7 +46,7 @@
       
       </select>
       
-      <input class="sear" type="button" value="SEARCH" onClick="this.form.action='http://35.240.131.7/PROJ/templates/wildcard.html'; submit()" formmethod="POST" style="position: absolute;
+      <input class="sear" type="button" value="SEARCH" onClick="this.form.action='http://35.240.131.7:5000/wildcard'; submit()" formmethod="POST" style="position: absolute;
       top: 176;
     left: 820;
     height: 55;">

@@ -21,11 +21,11 @@
 
 
   <div class="flexsearch"> 
-      <a href="http://35.240.131.7/PROJ/templates"><img src= "https://sv1.picz.in.th/images/2019/03/24/tblDzq.png" width="200" hight="150" /></a>
+      <a href="http://35.240.131.7:5000/"><img src= "https://sv1.picz.in.th/images/2019/03/24/tblDzq.png" width="200" hight="150" /></a>
 
 		<div class="flexsearch--wrapper"  style="width: 700px;
     height: 120px;">
-			<form class="flexsearch--form" action="http://35.240.131.7/PROJ/templates/result.html" method="POST">
+			<form class="flexsearch--form" action="http://35.240.131.7:5000/result" method="POST">
 				<div class="flexsearch--input-wrapper">
 					<input class="flexsearch--input" type="text" name="text" value="{{text}}" style="width: 490;
           border-color: darkslateblue;"/>
@@ -36,8 +36,8 @@
 		</div>
     <div class="choose"><h4 style="    padding: 25 120;
       color: white;">CHOOSE TO SHOW RANK OF</h4></div>
-         <input class="se" type="button" value="inverted" onClick="this.form.action='http://35.240.131.7/PROJ/templates/rankinverted.html'; submit()" formmethod="post">
-        <input class="sea" type="button" value="Positional" onClick="this.form.action='http://35.240.131.7/PROJ/templates/rankPositional.html'; submit()" formmethod="post">
+         <input class="se" type="button" value="inverted" onClick="this.form.action='http://35.240.131.7:5000/rankinverted'; submit()" formmethod="post">
+        <input class="sea" type="button" value="Positional" onClick="this.form.action='http://35.240.131.7:5000/rankPositional'; submit()" formmethod="post">
 
       
    </div>
