@@ -26,7 +26,7 @@ nltk.download('stopwords')
 app = Flask(__name__)
 @app.route('/') 
 def index ():
-  return render_template("Index.html")
+  return render_template("index.html")
 
 def clearfileandtoken(content):
   lst = []
