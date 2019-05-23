@@ -101,8 +101,6 @@ def wild():
   if request.method == "POST":
     result = request.args
     words = request.form['text']
-    re = {}
-    re[""] = "Not Found"
     if len(words) != 0:
       w = searchengine.listword(words)
       return render_template("wild.html",result1 = w,text = words)
