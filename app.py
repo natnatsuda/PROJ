@@ -54,7 +54,7 @@ def result():
         r4,c4 = testtree.searchword(words)
         return render_template("result.html",result1 = re1,count1 = c1,result2 = re2,count2 = c2,result3=re3,count3 = c3,text=words,result4 = r4,count4 = c4)
     else:
-      return render_template("Index.html")
+      return render_template("index.html")
 
 
 
@@ -74,7 +74,7 @@ def rankinverted():
         re1,tt = tfidf.searchword(words)
         return render_template("rankinverted.html",re1 = re1,tt=tt,text=words,len=len(re1))
     else:
-      return render_template("Index.html")
+      return render_template("index.html")
 
 @app.route('/rankPositional', methods =["POST" , "GET"])
 def rankPositional():
@@ -92,7 +92,7 @@ def rankPositional():
         repo,ttpo = tfpos.searchword(words,pos)
         return render_template("rankPositional.html",re2 = repo,tt=ttpo,text=words,len=len(repo))
     else:
-      return render_template("Index.html")
+      return render_template("index.html")
 
 @app.route('/wild', methods =["POST" , "GET"])
 def wild():
@@ -106,7 +106,7 @@ def wild():
       w = searchengine.listword(words)
       return render_template("wild.html",result1 = w,text = words)
     else:
-      return render_template("Index.html")
+      return render_template("index.html")
 
 
 @app.route('/wildcard', methods =["POST" , "GET"])
